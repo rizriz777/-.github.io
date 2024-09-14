@@ -5,7 +5,7 @@ function init() {
         aDiv = obox.getElementsByTagName('div');
 
     for (var i = 0; i < aDiv.length; i++) {
-        aDiv[i].style.background = "url(" (i + 1) + ".jpg) center/cover";
+        aDiv[i].style.background = `url(/${(i + 1)}.jpg) center/cover`;
         aDiv[i].style.transform = "rotateY(" + (i * 36) + "deg) translate3d(0,0,350px)";
         aDiv[i].style.transition = "transform 1s " + (aDiv.length - i) * 0.2 + "s";
     }
